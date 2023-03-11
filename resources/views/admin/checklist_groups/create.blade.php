@@ -14,7 +14,7 @@
                             </ul>
                         </div>
                     @endif
-                    
+
                     <form action="{{ route('admin.checklist_groups.store')}}" method="POST">
                         @csrf
                         <div class="card-header">{{ __('New Checklist Group') }}</div>
@@ -24,7 +24,7 @@
                                         <div class="col-sm-12">
                                             <div class="form-group">
                                                 <label for="name">{{ __('Name') }}</label>
-                                                <input class="form-control" name="name" type="text"
+                                                <input value="{{ old('name')}}" class="form-control" name="name" type="text"
                                                     placeholder="{{ __('Checklist group name') }}">
                                             </div>
                                         </div>

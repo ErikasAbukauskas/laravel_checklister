@@ -15,5 +15,8 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         $this->call(UserSeeder::class);
+        $this->call(PagesSeeder::class);
+
+        //php artisan db:seed --class=PagesSeeder seedins tik ta modeli
     }
 }

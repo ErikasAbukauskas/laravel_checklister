@@ -24,6 +24,7 @@ class StoreChecklistGroupRequest extends FormRequest
     public function rules()
     {
         return [
+            'name' => ['required', 'unique:checklist_groups'],
         ];
     }
 }
